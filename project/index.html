@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
     <title>Home &VerticalBar; TorqueChain</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/dist/xzoom.css">
+    <link rel="stylesheet" href="Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/dist/xzoom.min.css">
+    <script src="Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/dist/xzoom.min.js"></script>
+
 </head>
 <body>
     <nav>
@@ -21,17 +22,39 @@
         </ul>
     </nav>
     <main>
-        <article>
+
+        <div class="body-container">
+            <article>
             <h2>Drive now, pay later</h2>
             <p>
                 Get instant EMI approval with zero hassle. 
                 Choose from a wide range of verified vehicles and hit the road today.
                 <button class="get-started">Get Started</button>
             </p>
-        </article>
-        <aside>
+            </article>
+            <aside>
             <img src="car2.png">
-        </aside>
+            </aside>
+        </div>
+
+        <h3>Our Range</h3>
+        <h2>Discover Your Road Patner</h2>
+
+    <div class="xzoom-container">
+        <img class="xzoom" id="xzoom-default" src="car2.png" xoriginal="car2.png" />
+        <div class="xzoom-thumbs">
+        <a href="car2.png">
+            <img class="xzoom-gallery" width="80" src="car2.png" xpreview="car2.png">
+        </a>
+        <!-- <a href="image2-large.jpg">
+            <img class="xzoom-gallery" width="80" src="image2-thumb.jpg" xpreview="image2.jpg">
+        </a> -->
+        <!-- Add more thumbnails if needed -->
+        </div>
+</div>
+
+        
+        
     </main>
 </body>
 </html>
