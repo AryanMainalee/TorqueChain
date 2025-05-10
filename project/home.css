@@ -2,6 +2,9 @@
     --background-color: #d9d9d9;
     --default-font: inter;
     --default-text-color: #000000;
+    --default-paragraph-color: #1E1E1E;
+    --default-margin: 20px;
+    --default-theme-color: #D51319;
 }
 html{
     margin: 0;
@@ -18,10 +21,13 @@ img{
 nav,ul{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
 }
 nav,ul,li{
     list-style: none;
+
 }
 nav,ul,li,a{
     text-decoration: none;
@@ -29,5 +35,46 @@ nav,ul,li,a{
 }
 #title{
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 30px;
+}
+#title-container{
+    display: flex;
+    align-items: center;
+    margin-right: 70%;
+}
+main{
+    display: flex;
+}
+h2{
+    font-size: 35pt;
+    width: 400px;
+}
+main p{
+    width: 400px;
+    font-size: 18pt;
+    color: var(--default-paragraph-color);
+}
+article{
+    margin-left: 10%;
+}
+.get-started{
+    display: block;
+    margin-top: var(--default-margin);
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--default-theme-color);
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+    cursor: pointer;
+}
+aside img{
+    width: 500px;
+    height: 200px;
+}
+aside{
+    margin-top: 165px;
+    margin-left: 23.9%;
 }
