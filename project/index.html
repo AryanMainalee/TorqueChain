@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
-    <script src="home.js"></script>
     <title>Home &VerticalBar; TorqueChain</title>
-    <link rel="stylesheet" href="Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/dist/xzoom.css">
-    <link rel="stylesheet" href="Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/dist/xzoom.min.css">
-    <script src="Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/dist/xzoom.min.js"></script>
+    <script src="home.js" defer></script>
 
 </head>
 <body>
@@ -33,28 +30,33 @@
             </p>
             </article>
             <aside>
-            <img src="car2.png">
+            <img src="car2.png" id="car2">
             </aside>
         </div>
 
         <h3>Our Range</h3>
         <h2>Discover Your Road Patner</h2>
 
-    <div class="xzoom-container">
+    <!-- <div class="xzoom-container">
         <img class="xzoom" id="xzoom-default" src="car2.png" xoriginal="car2.png" />
         <div class="xzoom-thumbs">
         <a href="car2.png">
             <img class="xzoom-gallery" width="80" src="car2.png" xpreview="car2.png">
         </a>
-        <!-- <a href="image2-large.jpg">
+         <a href="image2-large.jpg">
             <img class="xzoom-gallery" width="80" src="image2-thumb.jpg" xpreview="image2.jpg">
         </a> -->
         <!-- Add more thumbnails if needed -->
+        <!-- </div> -->
+
+        <div class="gallery">
+            <div id="prev" class="side"></div>
+            <div class="main" id="current"></div>
+            <div id="next" class="side"></div>
         </div>
-</div>
 
         
-        
     </main>
+
 </body>
 </html>
