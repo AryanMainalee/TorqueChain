@@ -3,10 +3,11 @@
     --default-font: inter;
     --default-text-color: #000000;
     --default-paragraph-color: #1E1E1E;
-    --default-margin: 20px;
+    --default-margin: 3%;
     --default-theme-color: #D51319;
+    --default-box-shadow: box-shadow: 0 5px 10px rgb(0, 0, 0.5);
 }
-html{
+html,body{
     margin: 0;
     padding: 0;
     font-size: 12pt;
@@ -18,16 +19,30 @@ body{
 img{
     height: 55px;
 }
+#navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000; /*to ensure that this has the highest z-index*/
+}
+#navbar.scrolled{
+    background-color: white;
+    box-shadow: var(--default-box-shadow);
+}
+main{
+    margin-top: 2rem;
+    margin-left: var(--default-margin);
+}
 nav,ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    gap: 70px;
+    gap: 90px;
 }
 nav,ul,li{
     list-style: none;
-
 }
 nav,ul,li,a{
     text-decoration: none;
@@ -35,16 +50,19 @@ nav,ul,li,a{
 }
 #title{
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 40px;
+    /* margin-left: auto; */
 }
 #title-container{
     display: flex;
     align-items: center;
     margin-right: 70%;
 }
-.body-container{
+.hero-section{
     display: flex;
-    width: fit-content;
+    justify-content: space-between;
+    position: relative;
+    z-index: -1;
 }
 article h2{
     font-size: 35pt;
@@ -55,9 +73,6 @@ main p{
     width: 400px;
     font-size: 18pt;
     color: var(--default-paragraph-color);
-}
-article{
-    margin-left: 10%;
 }
 .get-started{
     display: block;
@@ -72,50 +87,31 @@ article{
     font-size: 14pt;
     cursor: pointer;
 }
+.get-started:hover{
+    box-shadow: 0px 0px 10px var(--default-theme-color);
+    transform: scale(1.05);
+}
+aside{
+    position: relative;
+}
 aside img{
     width: 600px;
     height: 300px;
-}
-aside{
-    margin-top: 165px;
-    margin-left: 24%;
+    position: absolute;
+    top: 30%;
+    right: 0;
 }
 h3{
-    margin-top: var(--default-margin);
-    margin-left: 7%;
+    /* margin-top: ; */
     color: var(--default-theme-color);
     font-size: x-large;
 }
 h2{
-    margin-left: 7%;
     font-weight: bolder;
     font-size: xx-large;
 }
-.gallery { 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 10px; 
-    margin-top: 20px; 
+.content{
+    position: sticky;
+    z-index: 2;
+    height: 200vh;
 }
-.main { 
-    width: 300px; 
-    height: 200px; 
-    border: 1px solid #f1efef; 
-}
-.side { 
-    width: 100px; 
-    height: 70px; 
-    border: 1px solid #ccc; 
-    cursor: pointer; 
-}
-.side.empty { 
-    border: none; 
-    width: 100px; 
-} /* Invisible placeholder */
-.slider-img{ 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-}
-
