@@ -62,7 +62,7 @@ nav,ul,li,a{
     display: flex;
     justify-content: space-between;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 article h2{
     font-size: 35pt;
