@@ -1,75 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <link rel="shortcut icon" href="/TorqueChain/project/Images/logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="shortcut icon" href="/TorqueChain/project/Images/logo.png" />
     <title>Home &VerticalBar; TorqueChain</title>
     <script src="home.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Moon+Dance&family=Noto+Sans+Hatran&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Moon+Dance&family=Noto+Sans+Hatran&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="Slider/js/jquery.cxslide.min.js"></script>
+    <link rel="stylesheet" href="slider.css">
+    <script src="custom.js" defer></script>
 </head>
+
 <body>
     <nav id="navbar">
         <ul>
-            <li id="title-container"><img src="/TorqueChain/project/Images/logo.png"><span id="title">TorqueChain</span></li>
-            <li><a href="#">Home</a></li>
+            <li id="title-container">
+                <img src="/TorqueChain/project/Images/logo.png" /><span id="title">TorqueChain</span>
+            </li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
     <main>
-
         <div class="hero-section">
             <article>
-            <h2>Drive now, pay later</h2>
-            <p>
-                Get instant EMI approval with zero hassle. 
-                Choose from a wide range of verified vehicles and hit the road today.
-                <button class="get-started">Get Started</button>
-            </p>
+                <h2>Drive now, pay later</h2>
+                <p>
+                    Get instant EMI approval with zero hassle. Choose from a wide range
+                    of verified vehicles and hit the road today.
+                    <button class="get-started">Get Started</button>
+                </p>
             </article>
             <aside>
-            <img src="/TorqueChain/project/Images/car2.png" id="car2">
+                <img src="/TorqueChain/project/Images/car2.png" id="car2" />
             </aside>
         </div>
 
         <div class="content">
-            
             <span class="h">Our Range</span>
             <h2>Discover Your Road Patner</h2>
-            <img src="/TorqueChain/project/Images/test.jpg" alt="">
         </div>
-        
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="Images/vechicle10.png" alt="Slide 1">
+                    <div class="description">Description about the vehicle.</div>
+                </div>
+
+                <div class="slide">
+                    <img src="Images/vehicle8.jpg" alt="Slide 2">
+                    <div class="description">Description about the vehicle.</div>
+                </div>
+
+                <div class="slide">
+                    <img src="Images/vehicle5.png" alt="Slide 3">
+                    <div class="description">Description about the vehicle.</div>
+                </div>
+
+                <div class="slide">
+                    <img src="Images/vehicle1.png" alt="Slide 4">
+                    <div class="description">Description about the vehicle.</div>
+                </div>
+            </div>
+
+                <button class="nav-btn left" id="prev">&#10094;</button>
+                <button class="nav-btn right" id="next">&#10095;</button>
+        </div>
+
+            <div class="closing">
+              
+            </div>
+
     </main>
 
     <footer>
         <div class="footer-container">
             <div class="hd">
-                <img src="/TorqueChain/project/Images/inverted-logo.png">TorqueChain
+                <img src="/TorqueChain/project/Images/inverted-logo.png" />TorqueChain
             </div>
 
-            <div style="height: fit-content;">About Us</div>
+            <!-- <div style="height: fit-content">About Us</div> -->
 
             <div class="social">
-
                 <div class="contains">
-
                     <pre>
-                        
-                    PlaceHolder
-                    PlaceHolder
-                    PlaceHolder
-                    PlaceHolder
-                    PlaceHolder
-                    PlaceHolder
-                    PlaceHolder
-                    PlaceHolder
-                    PlaceHolder
+
+            PlaceHolder
+            PlaceHolder
+            PlaceHolder
+            PlaceHolder
+            PlaceHolder
+            PlaceHolder
+            PlaceHolder
+            PlaceHolder
+            PlaceHolder
 
                 </pre>
                 </div>
@@ -105,15 +137,11 @@
 
                     </pre>
                 </div>
-
             </div>
 
-            <div class="last">
-                &copy;All copy right reserved as of 2025
-            </div>
-
+            <div class="last">&copy;All copy right reserved as of 2025</div>
         </div>
     </footer>
-
 </body>
+
 </html>
