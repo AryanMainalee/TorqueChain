@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>car listings</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(191, 190, 190)
+}
+
+h2 {
+  font-family: cursive;
+  font-size: 2.8em;
+  text-align: center;
+  margin-top: 20px;
+  color: #2d2d2d;
+  text-shadow: 1px 1px #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 30px;
+}
+
+.card {
+  background: #ffffffee;
+  width: 250px;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  background-color: #fefbf5;
+}
+
+.bike-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+h3 {
+  font-size: 1.3em;
+  margin: 10px 0 5px;
+  color: #333333;
+}
+
+.price {
+  color: #e74c3c;
+  font-weight: bold;
+  margin: 6px 0;
+  font-size: 1.1em;
+}
+
+.info {
+  font-size: 0.9em;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  .card {
+    width: 90%;
+    padding: 12px;
+  }
+
+  .bike-img {
+    height: 130px;
+  }
+ 
+}
+.buy{
+  border: 1px green solid ;
+  width: 250px;
+  background-color: rgb(9, 9, 9);
+  color: white;
+  
+
+}
+.buy:hover{
+  background-color: rgb(143, 224, 20);
+}
+
+</style>
+
+</head>
+<body>
+  
+  <h2 style="text-align:center;">Normal 4 wheelers</h2>
+  <div class="container">
+        <div class="card">
+      <img src="ZuwzPLVsGrYSvl64_2024SuzukiSwiftUltraRedfrontquarterstatic.avif" alt="Suzuki Swift" class="bike-img">
+      <h3>Suzuki Swift</h3>
+      <div class="price">Nrs. 33,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="2018_Suzuki_Karimun_Wagon_R_GL_(front).jpg" alt="Wagon R" class="bike-img">
+      <h3>Maruti Suzuki Wagon R</h3>
+      <div class="price">Nrs. 28,49,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="1200px-Maruti_Suzuki_-_Alto_800_LXi_-_Kolkata_2013-04-15_7871.jpg" alt="Alto 800" class="bike-img">
+      <h3>Maruti Suzuki Alto 800</h3>
+      <div class="price">Nrs. 25,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="2023_Hyundai_i10_(AC3)_Autofrühling_Ulm_IMG_9349.jpg" alt="Grand i10" class="bike-img">
+      <h3>Hyundai Grand i10</h3>
+      <div class="price">Nrs. 31,96,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="images.jpg" alt="Baleno" class="bike-img">
+      <h3>Maruti Suzuki Baleno</h3>
+      <div class="price">Nrs. 37,89,000</div>
+        <div class="buy">Buy now</div>
+
+      
+    </div>
+        <div class="card">
+      <img src="front-left-side-47.avif" alt="Hyundai Santro" class="bike-img">
+      <h3>Hyundai Santro</h3>
+      <div class="price">Nrs. 28,96,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="Renault_Kwid_2017_in_Montevideo_(front).jpg" alt="Renault Kwid" class="bike-img">
+      <h3>Renault Kwid</h3>
+      <div class="price">Nrs. 24,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="front-left-side-47 (1).avif" alt="Tata Tiago" class="bike-img">
+      <h3>Tata Tiago</h3>
+      <div class="price">Nrs. 29,50,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="nexon.avif" alt="Tata Nexon" class="bike-img">
+      <h3>Tata Nexon</h3>
+      <div class="price">Nrs. 39,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="2022_Hyundai_Venue_Preferred_in_Polar_White,_Front_Right,_09-12-2023.jpg" alt="Hyundai Venue" class="bike-img">
+      <h3>Hyundai Venue</h3>
+      <div class="price">Nrs. 45,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="kiger.avif" alt="Renault Kiger" class="bike-img">
+      <h3>Renault Kiger</h3>
+      <div class="price">Nrs. 34,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="punch.jpg" alt="Tata Punch" class="bike-img">
+      <h3>Tata Punch</h3>
+      <div class="price">Nrs. 33,49,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="magnite.jpg" alt="Nissan Magnite" class="bike-img">
+      <h3>Nissan Magnite</h3>
+      <div class="price">Nrs. 34,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="redigo.jpg" alt="Datsun Redi-GO" class="bike-img">
+      <h3>Datsun Redi-GO</h3>
+      <div class="price">Nrs. 23,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="ignis.avif" alt="Maruti Ignis" class="bike-img">
+      <h3>Maruti Suzuki Ignis</h3>
+      <div class="price">Nrs. 32,49,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+
+    
+   
+    
+
+    
+
+  </div>
+</body>
+</html>

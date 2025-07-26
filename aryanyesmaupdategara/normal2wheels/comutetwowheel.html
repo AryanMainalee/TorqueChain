@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bike Listings</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(191, 190, 190)
+}
+
+h2 {
+  font-family: cursive;
+  font-size: 2.8em;
+  text-align: center;
+  margin-top: 20px;
+  color: #2d2d2d;
+  text-shadow: 1px 1px #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 30px;
+}
+
+.card {
+  background: #ffffffee;
+  width: 250px;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  background-color: #fefbf5;
+}
+
+.bike-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+h3 {
+  font-size: 1.3em;
+  margin: 10px 0 5px;
+  color: #333333;
+}
+
+.price {
+  color: #e74c3c;
+  font-weight: bold;
+  margin: 6px 0;
+  font-size: 1.1em;
+}
+
+.info {
+  font-size: 0.9em;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  .card {
+    width: 90%;
+    padding: 12px;
+  }
+
+  .bike-img {
+    height: 130px;
+  }
+  
+}
+.buy{
+  border: 1px green solid ;
+  width: 250px;
+  background-color: rgb(9, 9, 9);
+  color: white;
+  
+
+}
+.buy:hover{
+  background-color: rgb(143, 224, 20);
+}
+
+</style>
+
+</head>
+<body>
+  
+  <h2 style="text-align:center;">Normal 2 wheelers</h2>
+  <div class="container">
+    
+   
+    <div class="card">
+      <img src="n125.avif" alt="Bajaj Pulsar N125" class="bike-img">
+      <h3>Bajaj Pulsar N125 </h3>
+      <div class="price">Nrs. 2,00,000</div>
+      <div class="info">125cc | 2025 | Petrol | 5 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+   
+    <div class="card">
+      <img src="n250.jpg" alt="Pulsar N 250" class="bike-img">
+      <h3>Pulsar N 250 2025</h3>
+      <div class="price">Nrs. 3,98,900</div>
+      <div class="info">250cc | 2025 | Petrol | 5 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    
+    <div class="card">
+      <img src="raider125.avif" alt="TVS Raider 125" class="bike-img">
+      <h3>TVS Raider 125</h3>
+      <div class="price">Nrs.1,96,900</div>
+      <div class="info">125cc | 2024 | Petrol | 2025</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+   
+    <div class="card">
+      <img src="xoom.jpg" alt="Hero Xoom 125" class="bike-img">
+      <h3>Hero Xoom 125</h3>
+      <div class="price">Nrs.1,33,004</div>
+      <div class="info">124.66cc | 2025 | Petrol | Automatic</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+ 
+    <div class="card">
+      <img src="rs200.webp" alt="Pulsar RS 200" class="bike-img">
+      <h3>Pulsar RS 200</h3>
+      <div class="price">Nrs. 2,38,000</div>
+      <div class="info">199.5cc | 2025 | Petrol | 5 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card">
+      <img src="450sr.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>CF Moto 450SR S</h3>
+      <div class="price">Nrs. 10,49,900</div>
+      <div class="info">449.5cc | 2024 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="rc200.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>KTM rc200</h3>
+      <div class="price">Nrs. 3,49,900</div>
+      <div class="info">200cc | 2016 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card">
+      <img src="pulsar125.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>Pulsar 125</h3>
+      <div class="price">Nrs. 1,33,000</div>
+      <div class="info">125cc | 2023 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card">
+      <img src="jupiter.avif" alt="CF Moto 450SR S" class="bike-img">
+      <h3>TVS Jupiter</h3>
+      <div class="price">Nrs. 2,49,900</div>
+      <div class="info">110 cc | 2024 | Petrol | Automatic</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card">
+      <img src="splendor.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>Hero splendor</h3>
+      <div class="price">Nrs. 49,900</div>
+      <div class="info">125cc | 2013 | Petrol | 4 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="xtreme160.avif" alt="CF Moto 450SR S" class="bike-img">
+      <h3>Xtreme 160r</h3>
+      <div class="price">Nrs. 2,89,900</div>
+      <div class="info">163cc | 2021 | Petrol | 5 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="ns200.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>Bajaj pulsar ns200</h3>
+      <div class="price">Nrs. 3,49,900</div>
+      <div class="info">200 | 2024 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="dio.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>Honda Dio</h3>
+      <div class="price">Nrs. 1,20,900</div>
+      <div class="info">125cc | 2024 | Petrol | Automatic</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="300nk_02.png" alt="CF Moto 450SR S" class="bike-img">
+      <h3>CF Moto 300NK</h3>
+      <div class="price">Nrs. 7,49,900</div>
+      <div class="info">300cc | 2023 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="duke390.jpg" alt="KTM Duke 390" class="bike-img">
+      <h3>KTM Duke 390</h3>
+      <div class="price">Nrs. 8,49,900</div>
+      <div class="info">370cc | 2013 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+
+
+    
+
+  </div>
+</body>
+</html>

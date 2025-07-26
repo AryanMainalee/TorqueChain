@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bike Listings</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(191, 190, 190)
+}
+
+h2 {
+  font-family: cursive;
+  font-size: 2.8em;
+  text-align: center;
+  margin-top: 20px;
+  color: #2d2d2d;
+  text-shadow: 1px 1px #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 30px;
+}
+
+.card {
+  background: #ffffffee;
+  width: 250px;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  background-color: #fefbf5;
+}
+
+.bike-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+h3 {
+  font-size: 1.3em;
+  margin: 10px 0 5px;
+  color: #333333;
+}
+
+.price {
+  color: #e74c3c;
+  font-weight: bold;
+  margin: 6px 0;
+  font-size: 1.1em;
+}
+
+.info {
+  font-size: 0.9em;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  .card {
+    width: 90%;
+    padding: 12px;
+  }
+
+  .bike-img {
+    height: 130px;
+  }
+}
+.buy{
+  border: 1px green solid ;
+  width: 250px;
+  background-color: rgb(9, 9, 9);
+  color: white;
+  
+
+}
+.buy:hover{
+  background-color: rgb(143, 224, 20);
+}
+</style>
+
+</head>
+<body>
+  
+  <h2 style="text-align:center;">Luxury 2 wheelers</h2>
+  <div class="container">
+    
+   
+    <div class="card">
+      <img src="what-the-europeans-will-be-missing-honda-cbr600rr.webp" alt="CBR 600rr" class="bike-img">
+      <h3>Honda CBR 600rr </h3>
+      <div class="price">Nrs. 31,00,000</div>
+      <div class="info">600cc | 2016 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+   
+    <div class="card">
+      <img src="cbr650.jpg" alt="CBR 650f" class="bike-img">
+      <h3>Honda CBR 650f</h3>
+      <div class="price">Nrs. 28,98,900</div>
+      <div class="info">650cc | 2013 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    
+    <div class="card">
+      <img src="ninja650.jpg" alt="Ninja 650" class="bike-img">
+      <h3>Kawasaki Ninja 650</h3>
+      <div class="price">Nrs.41,96,900</div>
+      <div class="info">650cc | 2012 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+   
+    <div class="card">
+      <img src="s1krr.jpg" alt="s1k" class="bike-img">
+      <h3>BMW S1000rr</h3>
+      <div class="price">Nrs.1,00,33,004</div>
+      <div class="info">1000cc | 2023 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+ 
+    <div class="card">
+      <img src="fatboy.jpg" alt="Fatboy" class="bike-img">
+      <h3>Harley Davidson Fatboy</h3>
+      <div class="price">Nrs. 2,00,38,000</div>
+      <div class="info">1923cc | 2021 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card">
+      <img src="monster821.jpg" alt="Monster" class="bike-img">
+      <h3>Ducati Monster 821</h3>
+      <div class="price">Nrs. 28,49,900</div>
+      <div class="info">821cc | 2013 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="rsv4.jpg" alt="RSV4" class="bike-img">
+      <h3>Apprilia RSV4</h3>
+      <div class="price">Nrs. 67,49,900</div>
+      <div class="info">1000cc | 2021 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card">
+      <img src="rc8c.webp" alt="RC8c" class="bike-img">
+      <h3>KTM RC8C</h3>
+      <div class="price">Nrs. 84,33,000</div>
+      <div class="info">889cc | 2025 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card">
+      <img src="gt650.avif" alt="gt" class="bike-img">
+      <h3>Royal Enfield GT650</h3>
+      <div class="price">Nrs. 20,49,900</div>
+      <div class="info">650 cc | 2021 | Petrol | 6 Gears</div>
+      
+      <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card">
+      <img src="h2.jpg" alt="h2" class="bike-img">
+      <h3>Kawasaki Ninja h2</h3>
+      <div class="price">Nrs. 2,60,89,900</div>
+      <div class="info">998cc | 2015 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="1250gs.webp" alt="gs" class="bike-img">
+      <h3>BMW 1250GS</h3>
+      <div class="price">Nrs. 1,01,89,900</div>
+      <div class="info">1250cc | 2021 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="superduke.webp" alt="duke" class="bike-img">
+      <h3>KTM SuperDuke 1290</h3>
+      <div class="price">Nrs. 79,49,900</div>
+      <div class="info">1290cc | 2021 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="r7.jpg" alt="r7" class="bike-img">
+      <h3>Yamaha R7</h3>
+      <div class="price">Nrs. 20,20,900</div>
+      <div class="info">700cc | 2024 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="dayatona675.avif" alt="Triumph Dayatona 675 " class="bike-img">
+      <h3>Triumph Dayatona 675</h3>
+      <div class="price">Nrs. 34,49,900</div>
+      <div class="info">675cc | 20014 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card">
+      <img src="panigale.jpg" alt="panigale" class="bike-img">
+      <h3>Ducati Panigale V4</h3>
+      <div class="price">Nrs. 3,00,49,900</div>
+      <div class="info">1000cc | 2024 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+
+
+    
+
+  </div>
+</body>
+</html>

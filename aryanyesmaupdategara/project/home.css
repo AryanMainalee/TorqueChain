@@ -1,0 +1,117 @@
+:root{
+    --background-color: #d9d9d9;
+    --default-font: inter;
+    --default-text-color: #000000;
+    --default-paragraph-color: #1E1E1E;
+    --default-margin: 3%;
+    --default-theme-color: #D51319;
+    --default-box-shadow: box-shadow: 0 5px 10px rgb(0, 0, 0.5);
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+}
+body{
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+}
+img{
+    height: 55px;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000; /*to ensure that this has the highest z-index*/
+}
+#navbar.scrolled{
+    background-color: white;
+    box-shadow: var(--default-box-shadow);
+}
+main{
+    margin-top: 2rem;
+    margin-left: var(--default-margin);
+}
+nav,ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+}
+nav,ul,li{
+    list-style: none;
+}
+nav,ul,li,a{
+    text-decoration: none;
+    color: var(--default-text-color);
+}
+#title{
+    font-weight: bolder;
+    font-size: 40px;
+    /* margin-left: auto; */
+}
+#title-container{
+    display: flex;
+    align-items: center;
+    margin-right: 70%;
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+article h2{
+    font-size: 35pt;
+    width: 400px;
+    margin-left: 0;
+}
+main p{
+    width: 400px;
+    font-size: 18pt;
+    color: var(--default-paragraph-color);
+}
+.get-started{
+    display: block;
+    margin-top: var(--default-margin);
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--default-theme-color);
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+    cursor: pointer;
+}
+.get-started:hover{
+    box-shadow: 0px 0px 10px var(--default-theme-color);
+    transform: scale(1.05);
+}
+aside{
+    position: relative;
+}
+aside img{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+h3{
+    /* margin-top: ; */
+    color: var(--default-theme-color);
+    font-size: x-large;
+}
+h2{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.content{
+    position: sticky;
+    z-index: 2;
+    height: 200vh;
+}
