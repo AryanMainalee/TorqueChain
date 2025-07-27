@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicles &verbar; TorqueChain</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="home.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="selected.css">
+  <link rel="stylesheet" href="vehicles.css">
+  <script src="home.js" defer></script>
+  <script src="nav.js" defer></script>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li id="title-container">
+                <img src="/project/Images/logo.png" /><span id="title">TorqueChain</span>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Vehicles.html" class="selected">Vehicles</a></li>
+            <li><a href="emicalc.html">Finance</a></li>
+            <li><a href="blog.html" >Blog</a></li>
+        </ul>
+        <span class="ham"><i class="fa-solid fa-bars"></i></span>
+    </nav>
+  <h2>Vehicle Listings</h2>
+
+  <div class="filter-section">
+    <label for="category">Filter by Type: </label>
+    <select id="category" onchange="filterCards()">
+      <option value="all">All</option>
+      <option value="luxury-4w">Luxury 4-Wheelers</option>
+      <option value="normal-4w">Normal 4-Wheelers</option>
+      <option value="luxury-2w">Luxury 2-Wheelers</option>
+      <option value="normal-2w">Normal 2-Wheelers</option>
+    </select>
+  </div>
+
+  <div class="container" id="vehicleContainer">
+
+    <div class="card luxury-2w">
+      <img src="luxury2heels/what-the-europeans-will-be-missing-honda-cbr600rr.webp" alt="CBR 600rr" class="bike-img">
+      <h3>Honda CBR 600rr </h3>
+      <div class="price">Nrs. 31,00,000</div>
+      <div class="info">600cc | 2016 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+   
+    <div class="card luxury-2w">
+      <img src="luxury2heels/cbr650.jpg" alt="CBR 650f" class="bike-img">
+      <h3>Honda CBR 650f</h3>
+      <div class="price">Nrs. 28,98,900</div>
+      <div class="info">650cc | 2013 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    
+    <div class="card luxury-2w">
+      <img src="luxury2heels/ninja650.jpg" alt="Ninja 650" class="bike-img">
+      <h3>Kawasaki Ninja 650</h3>
+      <div class="price">Nrs.41,96,900</div>
+      <div class="info">650cc | 2012 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+   
+    <div class="card luxury-2w">
+      <img src="luxury2heels/s1krr.jpg" alt="s1k" class="bike-img">
+      <h3>BMW S1000rr</h3>
+      <div class="price">Nrs.1,00,33,004</div>
+      <div class="info">1000cc | 2023 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+ 
+    <div class="card luxury-2w">
+      <img src="luxury2heels/fatboy.jpg" alt="Fatboy" class="bike-img">
+      <h3>Harley Davidson Fatboy</h3>
+      <div class="price">Nrs. 2,00,38,000</div>
+      <div class="info">1923cc | 2021 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card luxury-2w">
+      <img src="luxury2heels/monster821.jpg" alt="Monster" class="bike-img">
+      <h3>Ducati Monster 821</h3>
+      <div class="price">Nrs. 28,49,900</div>
+      <div class="info">821cc | 2013 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card luxury-2w">
+      <img src="luxury2heels/rsv4.jpg" alt="RSV4" class="bike-img">
+      <h3>Apprilia RSV4</h3>
+      <div class="price">Nrs. 67,49,900</div>
+      <div class="info">1000cc | 2021 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card luxury-2w">
+      <img src="luxury2heels/rc8c.webp" alt="RC8c" class="bike-img">
+      <h3>KTM RC8C</h3>
+      <div class="price">Nrs. 84,33,000</div>
+      <div class="info">889cc | 2025 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card luxury-2w">
+      <img src="luxury2heels/gt650.avif" alt="gt" class="bike-img">
+      <h3>Royal Enfield GT650</h3>
+      <div class="price">Nrs. 20,49,900</div>
+      <div class="info">650 cc | 2021 | Petrol | 6 Gears</div>
+      
+      <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card luxury-2w">
+      <img src="luxury2heels/h2.jpg" alt="h2" class="bike-img">
+      <h3>Kawasaki Ninja h2</h3>
+      <div class="price">Nrs. 2,60,89,900</div>
+      <div class="info">998cc | 2015 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card luxury-2w">
+      <img src="luxury2heels/1250gs.webp" alt="gs" class="bike-img">
+      <h3>BMW 1250GS</h3>
+      <div class="price">Nrs. 1,01,89,900</div>
+      <div class="info">1250cc | 2021 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card luxury-2w">
+      <img src="luxury2heels/superduke.webp" alt="duke" class="bike-img">
+      <h3>KTM SuperDuke 1290</h3>
+      <div class="price">Nrs. 79,49,900</div>
+      <div class="info">1290cc | 2021 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card luxury-2w">
+      <img src="luxury2heels/r7.jpg" alt="r7" class="bike-img">
+      <h3>Yamaha R7</h3>
+      <div class="price">Nrs. 20,20,900</div>
+      <div class="info">700cc | 2024 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card luxury-2w">
+      <img src="luxury2heels/dayatona675.avif" alt="Triumph Dayatona 675 " class="bike-img">
+      <h3>Triumph Dayatona 675</h3>
+      <div class="price">Nrs. 34,49,900</div>
+      <div class="info">675cc | 20014 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card luxury-2w">
+      <img src="luxury2heels/panigale.jpg" alt="panigale" class="bike-img">
+      <h3>Ducati Panigale V4</h3>
+      <div class="price">Nrs. 3,00,49,900</div>
+      <div class="info">1000cc | 2024 | Petrol | 6 Gears</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card luxury-4w">
+      <img src="lluxury4wheels/jesko.jpg" alt="Koenigsegg Jesko" class="bike-img">
+      <h3>Koenigsegg Jesko</h3>
+      <div class="price">Nrs. 18,00,00,000</div>
+      <div class="buy">Buy now</div>
+    </div>
+
+  <div class="card luxury-4w">
+    <img src="luxury4wheels/bugatti-chiron-1500.webp" alt="Bugatti Chiron" class="bike-img">
+    <h3>Bugatti Chiron</h3>
+    <div class="price">Nrs. 25,00,00,000</div>
+    <div class="buy">Buy now</div>
+  </div>
+
+  <div class="card luxury-4w">
+    <img src="luxury4wheels/sf90.avif" alt="Ferrari SF90 Stradale" class="bike-img">
+    <h3>Ferrari SF90 Stradale</h3>
+    <div class="price">Nrs. 11,00,00,000</div>
+   <div class="buy">Buy now</div>
+  </div>
+
+  <div class="card luxury-4w">
+    <img src="luxury4wheels/aventadorrrr.jpg" alt="Lamborghini Aventador" class="bike-img">
+    <h3>Lamborghini Aventador</h3>
+    <div class="price">Nrs. 9,00,00,000</div>
+    <div class="buy">Buy now</div>
+  </div>
+
+<div class="card luxury-4w">
+  <img src="luxury4wheels/mustang.jpg" alt="Ford Mustang GT" class="bike-img">
+  <h3>Ford Mustang GT</h3>
+  <div class="price">Nrs. 2,10,00,000</div>
+   <div class="buy">Buy now</div>
+</div>
+
+<div class="card luxury-4w">
+  <img src="luxury4wheels/camaro.jpg" alt="Chevrolet Camaro SS" class="bike-img">
+  <h3>Chevrolet Camaro SS</h3>
+  <div class="price">Nrs. 2,20,00,000</div>
+   <div class="buy">Buy now</div>
+</div>
+
+<div class="card luxury-4w">
+  <img src="luxury4wheels/challenger.jpg" alt="Dodge Challenger SRT" class="bike-img">
+  <h3>Dodge Challenger SRT</h3>
+  <div class="price">Nrs. 2,40,00,000</div>
+   <div class="buy">Buy now</div>
+</div>
+
+<div class="card luxury-4w">
+  <img src="luxury4wheels/phantom.jpg" alt="Rolls-Royce Phantom" class="bike-img">
+  <h3>Rolls-Royce Phantom</h3>
+  <div class="price">Nrs. 13,00,00,000</div>
+   <div class="buy">Buy now</div>
+</div>
+
+<div class="card luxury-4w">
+  <img src="luxury4wheels/mulsanne.jpg" alt="Bentley Mulsanne" class="bike-img">
+  <h3>Bentley Mulsanne</h3>
+  <div class="price">Nrs. 9,80,00,000</div>
+   <div class="buy">Buy now</div>
+</div>
+
+<div class="card luxury-4w">
+  <img src="luxury4wheels/scalss.avif" alt="Mercedes-Benz S-Class" class="bike-img">
+  <h3>Mercedes-Benz S-Class</h3>
+  <div class="price">Nrs. 4,80,00,000</div>
+   <div class="buy">Buy now</div>
+</div>
+
+<div class="card luxury-4w">
+  <img src="luxury4wheels/seven.jpg" alt="BMW 7 Series" class="bike-img">
+  <h3>BMW 7 Series</h3>
+  <div class="price">Nrs. 4,20,00,000</div>
+   <div class="buy">Buy now</div>
+</div>
+    
+<div class="card normal-2w">
+      <img src="normal2wheels/n125.avif" alt="Bajaj Pulsar N125" class="bike-img">
+      <h3>Bajaj Pulsar N125 </h3>
+      <div class="price">Nrs. 2,00,000</div>
+      <div class="info">125cc | 2025 | Petrol | 5 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+   
+    <div class="card normal-2w">
+      <img src="normal2wheels/n250.jpg" alt="Pulsar N 250" class="bike-img">
+      <h3>Pulsar N 250 2025</h3>
+      <div class="price">Nrs. 3,98,900</div>
+      <div class="info">250cc | 2025 | Petrol | 5 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    
+    <div class="card normal-2w">
+      <img src="normal2wheels/raider125.avif" alt="TVS Raider 125" class="bike-img">
+      <h3>TVS Raider 125</h3>
+      <div class="price">Nrs.1,96,900</div>
+      <div class="info">125cc | 2024 | Petrol | 2025</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+   
+    <div class="card normal-2w">
+      <img src="normal2wheels/xoom.jpg" alt="Hero Xoom 125" class="bike-img">
+      <h3>Hero Xoom 125</h3>
+      <div class="price">Nrs.1,33,004</div>
+      <div class="info">124.66cc | 2025 | Petrol | Automatic</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+ 
+    <div class="card normal-2w">
+      <img src="normal2wheels/rs200.webp" alt="Pulsar RS 200" class="bike-img">
+      <h3>Pulsar RS 200</h3>
+      <div class="price">Nrs. 2,38,000</div>
+      <div class="info">199.5cc | 2025 | Petrol | 5 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card normal-2w">
+      <img src="normal2wheels/450sr.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>CF Moto 450SR S</h3>
+      <div class="price">Nrs. 10,49,900</div>
+      <div class="info">449.5cc | 2024 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-2w">
+      <img src="normal2wheels/rc200.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>KTM rc200</h3>
+      <div class="price">Nrs. 3,49,900</div>
+      <div class="info">200cc | 2016 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card normal-2w">
+      <img src="normal2wheels/pulsar125.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>Pulsar 125</h3>
+      <div class="price">Nrs. 1,33,000</div>
+      <div class="info">125cc | 2023 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card normal-2w">
+      <img src="normal2wheels/jupiter.avif" alt="CF Moto 450SR S" class="bike-img">
+      <h3>TVS Jupiter</h3>
+      <div class="price">Nrs. 2,49,900</div>
+      <div class="info">110 cc | 2024 | Petrol | Automatic</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+
+    <div class="card normal-2w">
+      <img src="normal2wheels/splendor.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>Hero splendor</h3>
+      <div class="price">Nrs. 49,900</div>
+      <div class="info">125cc | 2013 | Petrol | 4 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-2w">
+      <img src="normal2wheels/xtreme160.avif" alt="CF Moto 450SR S" class="bike-img">
+      <h3>Xtreme 160r</h3>
+      <div class="price">Nrs. 2,89,900</div>
+      <div class="info">163cc | 2021 | Petrol | 5 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-2w">
+      <img src="normal2wheels/ns200.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>Bajaj pulsar ns200</h3>
+      <div class="price">Nrs. 3,49,900</div>
+      <div class="info">200 | 2024 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-2w">
+      <img src="normal2wheels/dio.jpg" alt="CF Moto 450SR S" class="bike-img">
+      <h3>Honda Dio</h3>
+      <div class="price">Nrs. 1,20,900</div>
+      <div class="info">125cc | 2024 | Petrol | Automatic</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-2w">
+      <img src="normal2wheels/300nk_02.png" alt="CF Moto 450SR S" class="bike-img">
+      <h3>CF Moto 300NK</h3>
+      <div class="price">Nrs. 7,49,900</div>
+      <div class="info">300cc | 2023 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-2w">
+      <img src="normal2wheels/duke390.jpg" alt="KTM Duke 390" class="bike-img">
+      <h3>KTM Duke 390</h3>
+      <div class="price">Nrs. 8,49,900</div>
+      <div class="info">370cc | 2013 | Petrol | 6 Gears</div>
+       <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/ZuwzPLVsGrYSvl64_2024SuzukiSwiftUltraRedfrontquarterstatic.avif" alt="Suzuki Swift" class="bike-img">
+      <h3>Suzuki Swift</h3>
+      <div class="price">Nrs. 33,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/2018_Suzuki_Karimun_Wagon_R_GL_(front).jpg" alt="Wagon R" class="bike-img">
+      <h3>Maruti Suzuki Wagon R</h3>
+      <div class="price">Nrs. 28,49,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/1200px-Maruti_Suzuki_-_Alto_800_LXi_-_Kolkata_2013-04-15_7871.jpg" alt="Alto 800" class="bike-img">
+      <h3>Maruti Suzuki Alto 800</h3>
+      <div class="price">Nrs. 25,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/2023_Hyundai_i10_(AC3)_Autofrühling_Ulm_IMG_9349.jpg" alt="Grand i10" class="bike-img">
+      <h3>Hyundai Grand i10</h3>
+      <div class="price">Nrs. 31,96,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/images.jpg" alt="Baleno" class="bike-img">
+      <h3>Maruti Suzuki Baleno</h3>
+      <div class="price">Nrs. 37,89,000</div>
+        <div class="buy">Buy now</div>
+
+      
+    </div>
+        <div class="card normal-4w">
+      <img src="normal4wheels/front-left-side-47.avif" alt="Hyundai Santro" class="bike-img">
+      <h3>Hyundai Santro</h3>
+      <div class="price">Nrs. 28,96,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/Renault_Kwid_2017_in_Montevideo_(front).jpg" alt="Renault Kwid" class="bike-img">
+      <h3>Renault Kwid</h3>
+      <div class="price">Nrs. 24,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/front-left-side-47 (1).avif" alt="Tata Tiago" class="bike-img">
+      <h3>Tata Tiago</h3>
+      <div class="price">Nrs. 29,50,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/nexon.avif" alt="Tata Nexon" class="bike-img">
+      <h3>Tata Nexon</h3>
+      <div class="price">Nrs. 39,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/2022_Hyundai_Venue_Preferred_in_Polar_White,_Front_Right,_09-12-2023.jpg" alt="Hyundai Venue" class="bike-img">
+      <h3>Hyundai Venue</h3>
+      <div class="price">Nrs. 45,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/kiger.avif" alt="Renault Kiger" class="bike-img">
+      <h3>Renault Kiger</h3>
+      <div class="price">Nrs. 34,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/punch.jpg" alt="Tata Punch" class="bike-img">
+      <h3>Tata Punch</h3>
+      <div class="price">Nrs. 33,49,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/magnite.jpg" alt="Nissan Magnite" class="bike-img">
+      <h3>Nissan Magnite</h3>
+      <div class="price">Nrs. 34,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/redigo.jpg" alt="Datsun Redi-GO" class="bike-img">
+      <h3>Datsun Redi-GO</h3>
+      <div class="price">Nrs. 23,99,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+    <div class="card normal-4w">
+      <img src="normal4wheels/ignis.avif" alt="Maruti Ignis" class="bike-img">
+      <h3>Maruti Suzuki Ignis</h3>
+      <div class="price">Nrs. 32,49,000</div>
+        <div class="buy">Buy now</div>
+    </div>
+
+</div>
+<footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="/project/Images/inverted-logo.png" alt="TorqueChain Logo" />
+                <span>TorqueChain</span>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div class="footer-copy">&copy; All rights reserved, 2025</div>
+        </div>
+    </footer>
+
+  <script>
+    function filterCards() {
+      const selected = document.getElementById('category').value;
+      const cards = document.querySelectorAll('.card');
+
+      cards.forEach(card => {
+        card.style.display = (selected === 'all' || card.classList.contains(selected)) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>

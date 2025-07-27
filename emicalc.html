@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Finance &VerticalBar; TorqueChain</title>
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">
+  <script src="home.js" defer></script>
+  <link rel="stylesheet" href="selected.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Moon+Dance&family=Noto+Sans+Hatran&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+  <script src="nav.js" defer></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Inter;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f6f1ec;
+    }
+
+    .calc {
+      background-color: #fffaf0;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px 40px;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .calc h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #444;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    input[type="number"]:focus {
+      border-color: #ff944d;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff944d;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff751a;
+    }
+
+    #result {
+      text-align: center;
+      margin-top: 20px;
+      color: #444;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+        <ul>
+            <li id="title-container">
+                <img src="/project/Images/logo.png" /><span id="title">TorqueChain</span>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Vehicles.html">Vehicles</a></li>
+            <li><a href="emicalc.html" class="selected">Finance</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <span class="ham"><i class="fa-solid fa-bars"></i></span>
+    </nav>
+    <div class="container">
+        <div class="calc">
+    <h2>EMI Calculator</h2>
+
+    <label for="loan">Loan Amount (₹)</label>
+    <input type="number" id="loan" placeholder="e.g. 500000" />
+
+    <label for="rate">Interest Rate (% per year)</label>
+    <input type="number" id="rate" step="0.01" placeholder="e.g. 7.5" />
+
+    <label for="months">Loan Tenure (in months)</label>
+    <input type="number" id="months" placeholder="e.g. 60" />
+
+    <button onclick="calculateEMI()">Calculate EMI</button>
+
+    <h3 id="result"></h3>
+  </div>
+    </div>
+  <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="/project/Images/inverted-logo.png" alt="TorqueChain Logo" />
+                <span>TorqueChain</span>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div class="footer-copy">&copy; All rights reserved, 2025</div>
+        </div>
+    </footer>
+  <script>
+    function calculateEMI() {
+      const P = parseFloat(document.getElementById("loan").value);
+      const R = parseFloat(document.getElementById("rate").value) / 12 / 100;
+      const N = parseInt(document.getElementById("months").value);
+
+      if (isNaN(P) || isNaN(R) || isNaN(N) || P <= 0 || R <= 0 || N <= 0) {
+        document.getElementById("result").innerText = "Please enter valid values.";
+        return;
+      }
+
+      const emi = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
+      document.getElementById("result").innerText = `Your EMI is ₹${emi.toFixed(2)}`;
+    }
+  </script>
+
+</body>
+</html>
